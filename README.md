@@ -1,2 +1,3 @@
-# bash_raspi_presenter
-Bash scripts to display a pdf, images or webpage on boot
+# Raspi Presenter
+
+Note: This repo is also part of the [repository list](https://github.com/peterweissig/bash_repo).
