@@ -7,11 +7,11 @@ echo ""
 echo ""
 echo "1. setting up boot config"
 ConfigFile="/boot/config.txt"
-if grep -e "^dtoverlay" "$ConfigFile" >> /dev/Null; then
+if grep -e "^dtoverlay" "$ConfigFile" >> /dev/null; then
     echo "  disabling dtoverlay"
     sudo sed -i 's/^dtoverlay=/#dtoverlay=/g' "$ConfigFile"
 fi
-if ! grep -e "display_rotate=" "$ConfigFile" >> /dev/Null; then
+if ! grep -e "display_rotate=" "$ConfigFile" >> /dev/null; then
     echo "  adding display rotation"
     echo "display_rotate=0" | sudo tee -a "$ConfigFile"
 fi
