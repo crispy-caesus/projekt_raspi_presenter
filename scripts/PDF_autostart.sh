@@ -4,7 +4,7 @@ echo "setup autostart to PDF"
 echo "======================"
 echo ""
 
-CMD="okular --presentation '${HOME}/Dokumente/Presentation.pdf'"
+CMD="okular --presentation ${HOME}/Desktop/Presentation.pdf"
 
 echo ""
 echo "config autostart"
