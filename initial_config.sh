@@ -32,7 +32,7 @@ echo ""
 echo "4. installing okular"
 sudo apt install okular -y
 
-# default - run pdf
+# default - open website
 echo ""
-echo "5. config autostart of PDF"
-./PDF_autostart.sh
+echo "5. config autostart of WEB"
+scripts/WEB_autostart.sh
