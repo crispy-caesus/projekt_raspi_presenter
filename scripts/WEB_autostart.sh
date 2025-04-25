@@ -1,16 +1,15 @@
 #!/bin/bash
 
+CMD=chromium-browser --incognito --start-fullscreen https://robosax.org/live
+
 echo "setup autostart to WEB"
 echo "======================"
 echo ""
 
-CMD="chromium-browser --incognito --start-fullscreen https://robosax.org/live"
-
 echo ""
 echo "config autostart"
-mkdir -p "${HOME}/.config/lxsession/LXDE-pi"
-cp /etc/xdg/lxsession/LXDE-pi/autostart "${HOME}/.config/lxsession/LXDE-pi/"
-echo "$CMD" >> "${HOME}/.config/lxsession/LXDE-pi/autostart"
+mkdir -p "${XDG_CONFIG_HOME}/autostart"
+cp punkte.desktop "${XDG_CONFIG_HOME}/autostart"
 
 echo ""
 echo "display website"

@@ -1,0 +1,5 @@
+[Desktop App]
+Name=Punktestand Robosax
+Exec=chromium-browser --incognito --start-fullscreen https://robosax.org/live
+Type=Application
+
