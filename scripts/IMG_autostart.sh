@@ -4,13 +4,13 @@ echo "setup autostart to IMG"
 echo "======================"
 echo ""
 
-CMD="okular --presentation ${HOME}/Bilder/"
+CMD="okular --presentation $(xdg-user-dir PICTURES)/Bilder/"
 
 echo ""
 echo "config autostart"
-mkdir -p "${HOME}/.config/lxsession/LXDE-pi"
-cp /etc/xdg/lxsession/LXDE-pi/autostart "${HOME}/.config/lxsession/LXDE-pi/"
-echo "$CMD" >> "${HOME}/.config/lxsession/LXDE-pi/autostart"
+mkdir -p "${confdir}/autostart"
+rm ${confdir}/autostart/pdf.desktop ${confdir}/autostart/punkte.desktop
+cp bilder.desktop "${confdir}/autostart"
 
 echo ""
 echo "display images"
