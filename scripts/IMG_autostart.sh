@@ -4,7 +4,7 @@ echo "setup autostart to IMG"
 echo "======================"
 echo ""
 
-CMD="okular --presentation $(xdg-user-dir PICTURES)/Bilder/"
+CMD="okular --presentation $(xdg-user-dir PICTURES)/"
 
 confdir=~/.config
 if ! [[ -z $XDG_CONFIG_HOME ]]
