@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=Robosax Pdf Präsentation
-Exec=okular --presentation ${HOME}/Desktop/Presentation.pdf
+Exec=sh -c "okular --presentation ${HOME}/Desktop/Presentation.pdf"
 Type=Application
 
