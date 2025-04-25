@@ -25,14 +25,10 @@ pcmanfm --set-wallpaper wallpaper/RoboAG_horizontal.png
 echo ""
 echo "3. copying helper scripts to desktop"
 chmod u+x scripts/*.sh
-cp scripts/*.sh "${HOME}/Desktop/"
+cp scripts/*.sh *.desktop "${HOME}/Desktop/"
 
 # install programs
 echo ""
 echo "4. installing okular"
 sudo apt install okular -y
 
-# default - open website
-echo ""
-echo "5. config autostart of WEB"
-scripts/WEB_autostart.sh
