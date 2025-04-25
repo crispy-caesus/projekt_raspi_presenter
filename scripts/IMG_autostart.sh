@@ -6,6 +6,11 @@ echo ""
 
 CMD="okular --presentation $(xdg-user-dir PICTURES)/Bilder/"
 
+confdir=~/.config
+if ! [[ -z $XDG_CONFIG_HOME ]]
+ then $confdir=$XDG_CONFIG_HOME
+fi
+
 echo ""
 echo "config autostart"
 mkdir -p "${confdir}/autostart"
