@@ -6,11 +6,15 @@ echo ""
 
 CMD="okular --presentation ${HOME}/Desktop/Presentation.pdf"
 
+confdir=~/.config
+if ! [[ -z $XDG_CONFIG_HOME ]]
+ then $confdir=$XDG_CONFIG_HOME
+fi
+
 echo ""
 echo "config autostart"
-mkdir -p "${HOME}/.config/lxsession/LXDE-pi"
-cp /etc/xdg/lxsession/LXDE-pi/autostart "${HOME}/.config/lxsession/LXDE-pi/"
-echo "$CMD" >> "${HOME}/.config/lxsession/LXDE-pi/autostart"
+mkdir -p "${confdir}/autostart"
+cp pdf.desktop "${confdir}/autostart"
 
 echo ""
 echo "display pdf"
