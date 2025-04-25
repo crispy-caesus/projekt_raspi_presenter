@@ -25,7 +25,7 @@ pcmanfm --set-wallpaper wallpaper/RoboAG_horizontal.png
 echo ""
 echo "3. copying helper scripts to desktop"
 chmod u+x scripts/*.sh
-cp scripts/*.sh "${HOME}/Desktop/"
+ln -s scripts/*.sh "${HOME}/Desktop/"
 
 # install programs
 echo ""
