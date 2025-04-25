@@ -14,6 +14,7 @@ fi
 echo ""
 echo "config autostart"
 mkdir -p "${confdir}/autostart"
+rm ${confdir}/autostart/pdf.desktop ${confdir}/autostart/bilder.desktop
 cp punkte.desktop "${confdir}/autostart"
 
 echo ""
