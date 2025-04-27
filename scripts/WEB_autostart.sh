@@ -4,7 +4,7 @@ echo "setup autostart to WEB"
 echo "======================"
 echo ""
 
-CMD="chromium-browser --incognito --start-fullscreen https://robosax.org/live"
+CMD="chromium-browser --incognito --start-fullscreen https://robosax.de/live"
 
 confdir=~/.config
 if ! [[ -z $XDG_CONFIG_HOME ]]
