@@ -8,7 +8,7 @@ CMD="chromium-browser --incognito --start-fullscreen https://robosax.de/live"
 
 confdir=~/.config
 if ! [[ -z $XDG_CONFIG_HOME ]]
- then $confdir=$XDG_CONFIG_HOME
+ then confdir=$XDG_CONFIG_HOME
 fi
 
 echo ""
