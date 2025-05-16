@@ -14,9 +14,9 @@ echo ""
 echo "config autostart"
 mkdir -p "${confdir}/autostart"
 rm "${confdir}/autostart/IMG.desktop" "${confdir}/autostart/WEB.desktop"
-cp ~/projekt_rapsi_presenter/scripts/PDF.desktop "${confdir}/autostart"
+cp ~/projekt_raspi_presenter/scripts/PDF.desktop "${confdir}/autostart"
 
-bash ~/projekt_rapsi_presenter/scripts/PDF_run.sh
+bash ~/projekt_raspi_presenter/scripts/PDF_run.sh
 
 # start pdf presentation
 echo ""
