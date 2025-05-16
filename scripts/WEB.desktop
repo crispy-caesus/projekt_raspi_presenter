@@ -1,0 +1,4 @@
+[Desktop Entry]
+Name=Website Presentation
+Exec=bash ~/projekt_raspi_presenter/scripts/WEB_run.sh
+Type=Application

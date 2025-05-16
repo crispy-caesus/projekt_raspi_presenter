@@ -1,0 +1,4 @@
+[Desktop Entry]
+Name=Image Presentation
+Exec=bash ~/projekt_raspi_presenter/scripts/IMG_run.sh
+Type=Application

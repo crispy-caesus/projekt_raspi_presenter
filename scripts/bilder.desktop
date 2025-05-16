@@ -1,5 +1,0 @@
-[Desktop Entry]
-Name=Robosax Bilder
-Exec=sh -c "okular --presentation $(xdg-user-dir PICTURES)/"
-Type=Application
-

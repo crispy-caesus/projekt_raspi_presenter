@@ -1,0 +1,4 @@
+[Desktop Entry]
+Name=PDF Presentation
+Exec=bash ~/projekt_raspi_presenter/scripts/PDF_run.sh
+Type=Application
