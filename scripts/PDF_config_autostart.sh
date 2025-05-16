@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "setup autostart to PDF"
+echo "config autostart of PDF presentation"
 echo "======================"
 echo ""
 
@@ -13,10 +13,11 @@ fi
 echo ""
 echo "config autostart"
 mkdir -p "${confdir}/autostart"
-rm ${confdir}/autostart/IMG.desktop ${confdir}/autostart/WEB.desktop
+rm "${confdir}/autostart/IMG.desktop" "${confdir}/autostart/WEB.desktop"
 cp ~/projekt_rapsi_presenter/scripts/PDF.desktop "${confdir}/autostart"
 
 bash ~/projekt_rapsi_presenter/scripts/PDF_run.sh
 
+# start pdf presentation
 echo ""
 echo "done :-)"

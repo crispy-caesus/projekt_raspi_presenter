@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "setup autostart to IMG"
+echo "config autostart of image presentation"
 echo "======================"
 echo ""
 
@@ -13,10 +13,11 @@ fi
 echo ""
 echo "config autostart"
 mkdir -p "${confdir}/autostart"
-rm ${confdir}/autostart/PDF.desktop ${confdir}/autostart/WEB.desktop
+rm "${confdir}/autostart/PDF.desktop" "${confdir}/autostart/WEB.desktop"
 cp ~/projekt_raspi_presenter/scripts/IMG.desktop "${confdir}/autostart"
 
 bash ~/projekt_raspi_presenter/scripts/IMG_run.sh
 
+# start image presentation
 echo ""
 echo "done :-)"
